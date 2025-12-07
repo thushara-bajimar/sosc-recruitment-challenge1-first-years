@@ -1,3 +1,3 @@
-document.getElementById("info-bnt").addEventListener("click", () => {
-    alert("JS effect working!");
+document.getElementById("info-bnt").addEventListener("click", function () {
+    alert("Created by Thushara B S !");
 });
