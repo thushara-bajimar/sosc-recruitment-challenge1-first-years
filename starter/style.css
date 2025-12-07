@@ -9,9 +9,32 @@ body {
 #name {
     font-size: 64px;
     font-weight: 700;
+    animation: glow 3s ease-in-out infinite;
 }
 
-#info-btn {
+@keyframes glow{
+     0% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #66a6ff, 0 0 10px #66a6ff;
+        transform: translateY(0);
+    }
+    50% {
+        color: #f0f8ff;
+        text-shadow: 0 0 15px #89f7fe, 0 0 25px #66a6ff;
+        transform: translateY(-6px);
+    }
+    100% {
+        color: #ffffff;
+        text-shadow: 0 0 5px #66a6ff, 0 0 10px #66a6ff;
+        transform: translateY(0);
+    }
+}
+
+#info-btn{
+    transition: all 0.3s ease;
+}
+
+#info-btn: hover {
     margin-top: 25px;
     padding: 12px 28px;
     font-size: 16px;
